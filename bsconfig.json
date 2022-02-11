@@ -1,18 +1,21 @@
 {
   "name": "rescript-project-template",
-  "version": "0.0.1",
-  "sources": {
-    "dir" : "src",
-    "subdirs" : true
-  },
-  "package-specs": {
-    "module": "commonjs",
-    "in-source": true
-  },
-  "suffix": ".bs.js",
-  "bs-dependencies": [
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
   ],
-  "warnings": {
-    "error" : "+101"
-  },
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bs-dependencies": [],
+  "ppx-flags": [],
+  "refmt": 3
 }
